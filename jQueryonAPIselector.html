@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #272822;
+                color:white;
+                font-size: 2em;
+                font-family: georgia;
+            }
+            a{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="jquery.js"></script>
+        <script>
+            $('body').on('click','a, li', function(event){
+                console.log(this.tagName);
+            })
+        </script>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    </body>
+</html>

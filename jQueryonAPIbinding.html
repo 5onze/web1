@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="target" />
+        <p id="status"></p>
+        <script src="jquery.js"></script>
+        <script>
+            var handler = function(e){
+                $('#status').html(e.type);
+            }
+            $('#target').on('focus',handler).on('blur',handler);
+            /*
+            $('#target').on(
+                {
+                    'focus':handler,
+                    'blur':handler
+                }
+            )
+            */
+            /*
+            $('#target').on('focus blur', function(e){
+                $('#status').html(e.type);
+            })
+            */
+        </script>
+    </body>
+</html>
